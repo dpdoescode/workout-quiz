@@ -5,10 +5,10 @@ function Card({ workout, showFront, flipCard }) {
     <div className="card-container" onClick={flipCard}>
       <div className={`card-inner ${showFront ? '' : 'flipped'}`}>
         <div className="card-front">
-          {workout.name}
+          {workout.description}
         </div>
         <div className="card-back">
-          {workout.description}
+          {workout.name}
         </div>
       </div>
     </div>
